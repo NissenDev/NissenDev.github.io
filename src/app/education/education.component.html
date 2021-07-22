@@ -1,0 +1,124 @@
+<section id="cv">
+    <div class="container">
+        <h2><strong>Curriculum Vitae</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Education</strong></h4>
+
+                <ul class="timeline">
+                    <li>
+                      <h5>IT Engineer</h5>
+                      <em class="font-italic">Bachelor in IT<br> Via College, DK</em>
+                      <p class="year p-2 d-flex justify-content-center">2014 - 2017</p>
+                  </li>
+                    <li>
+                        <h5>International Baccalaureate</h5>
+                        <em class="font-italic">IB Diploma <br> Kolding Gymnasium, DK</em>
+                        <p class="year p-2 d-flex justify-content-center">2010 - 2012</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Professional experience</strong></h4>
+                <ul class="timeline">
+                    <li>
+                        <h5>Software Developer / Scrum Master</h5>
+                        <em>BankData, Aarhus, DK</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2020 - present</p>
+                            <button (click)="detailOnClick('freelance_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="freelanceIsShown">
+                            <strong>As a Developer:</strong> Developing on different areas in fin-tech.<br>
+                            <strong>As a Scrum Master:</strong> Working closely with the PO making sure we deliver what the stakeholders have in mind.<br>
+                            <strong>Téchnologies:</strong> JAVA, Angular 8+, Docker, OpenShift, Quarkus
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Software Developer / Scrum Master</h5>
+                        <em>Systematic, Aarhus, DK</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2017 - 2020 (3+ years)</p>
+                            <button (click)="detailOnClick('alternance_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="alternanceIsShown">
+                            <strong>As a Developer:</strong> Feature-driven development on many different areas such as GIS and Artillery systems<br>
+                            <strong>As a Scrum Master:</strong> Guiding a team through hard deadlines with good practices within scrum.<br>
+                            <strong>As a Supporter:</strong> Helped customers from many countries debugging and help-desk via cherwell. On-site and <br>
+                            <strong>Téchnologies:</strong>  JAVA EE, Angular 2, H2.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Software Developer intern</h5>
+                        <em>Dovideq Medical, Deventer, NL</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2016 (6 months)</p>
+                            <button (click)="detailOnClick('stage_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+
+                        </div>
+                        <p *ngIf="stageIsShown">
+                            <strong>About:</strong> Gathering data from a machine that gathers the health of an endoscope by scanning it.<br>
+                            <strong>How:</strong>Developed a full-stack system to store, share and display the measurements.<br>
+                            <strong>Technologies:</strong> C#, .NET, PHP
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="container row">
+                    <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>Langues</strong></h4>
+                        <div class="noProgress langue">
+                            <span class=""><img src="assets/images/danish-flag.png" width="20"
+                                    alt="The danish flag"><strong> Danish</strong> <i class="val">
+                                    Fluent</i></span>
+                        </div>
+
+                        <div class="noProgress langue">
+                            <span class=""><img src="assets/images/united-kingdom-flag.png" width="20"
+                                    alt="The english flag"><strong> English</strong> <i class="val"> Fluent</i></span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="container row">
+                    <div class="mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>Interests</strong></h4>
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="volleyBallIcon"></fa-icon><strong> Sport</strong> <i class="val">
+                                    Yoga, Fitness & Outdoors</i>
+                            </span>
+                        </div>
+
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="planeIcon"></fa-icon><strong> Cryptos</strong> <i class="val">
+                                    Eth, Neo, IOTA & NEM</i>
+                            </span>
+                        </div>
+
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="gameIcon"></fa-icon><strong> Leisure activities </strong> <i class="val">
+                                   Escape rooms, Boardgames, Live music & much more!</i>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
